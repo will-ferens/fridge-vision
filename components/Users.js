@@ -72,7 +72,7 @@ export default class Users extends Component {
         this.setState({
             newUser: {
                 userName: value,
-                recipes: '',
+                recipes: '47102$http://static.food2fork.com/4983866032_304b02a819_o22e2.jpg$https://thepioneerwoman.com/cooking/2010/09/chocolate-chip-cookie-sweet-rolls/$Chocolate_Chip_Cookie_Sweet_Rolls,',
                 other: ''
             }
         })
