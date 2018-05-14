@@ -7,8 +7,6 @@ import SavedRecipes from './components/SavedRecipes'
 import NavigationTree from './components/NavigationTree'
 import { Button } from 'react-native-elements'
 import { StackNavigator } from 'react-navigation'
-import {YellowBox} from 'react-native'
-console.disableYellowBox = true
 
 class App extends React.Component {
   static navigationOptions = {
@@ -22,7 +20,7 @@ class App extends React.Component {
     let modalContent = (
       <Modal
       visible={this.state.visibleModal}
-      animationType={'slide'}>>
+      animationType={'slide'}>
           <View style={styles.modal}>
               <Text style={{margin: 50, fontSize: 30}}>
                 Fridgely is an image recognition app that allows you
@@ -46,7 +44,7 @@ class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Image style={{height: 239, width: 230, marginLeft: 66, marginTop: 120, marginBottom: 80}} source={require("./assets/icons/fridgely-icon.png")}/>
+        <Image style={{height: 240, width: 238, marginLeft: 0, marginTop: 120, marginBottom: 80}} source={require("./assets/icons/fridge-vision-icon.png")}/>
        <Button
           onPress={() => this.props.navigation.navigate('Users')}
           title='Get Started'
